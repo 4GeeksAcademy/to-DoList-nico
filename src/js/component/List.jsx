@@ -23,19 +23,18 @@ const List = () => {
         setList(newList);
     };
 
-
     return (
         <form className="container" onSubmit={(event) => addTodo(event)}>
             <h1>To-Do List</h1>
             <input className="form-control form-control-lg" type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder="No tasks, please add a task" aria-label=".form-control-lg example"></input>
             <div className="todo-item">
                 <span className="todo-text"></span>
-                <button className="btn" type="submit">Add To-Do</button>
+                <button className="btn" type="submit">Add</button>
                 <ul>
                     {list.map((todo) => (
                         <li key={todo.id}>
                             {todo.todo}
-                            <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+                            <button className="btn btn-danger" onClick={() => deleteTodo(todo.id)}>&times;</button>
                         </li>
                     ))}
                 </ul>

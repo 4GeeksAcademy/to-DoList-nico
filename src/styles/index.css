@@ -1,12 +1,7 @@
 .container {
     max-inline-size: 550px;
-    padding: 0%;
-   
 }
 
 .btn {
-    float: right;
-    display: inline-block;
-    
-
+    float:inline-end;
 }
