@@ -4,4 +4,13 @@
 
 .btn {
     float:inline-end;
+    margin-top: 5px;
 }
+
+img, svg {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    }
+
+    
