@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const List = () => {
 
@@ -9,7 +10,7 @@ const List = () => {
 
         event.preventDefault()
         const newTodo = {
-            id: Math.random(),
+            id: uuidv4(),
             todo: input,
         };
 
